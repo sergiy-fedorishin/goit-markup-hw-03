@@ -1,3 +1,4 @@
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: #FFFFFF;
@@ -8,8 +9,32 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+margin: 0;
+}
+
 ul{
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+    display: flex;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    
+}
+
+.navigation{
+    display: flex;
 }
 
 .header {
@@ -24,6 +49,7 @@ ul{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
 }
 .accent-black {
 color:#2E2F42;
@@ -40,6 +66,8 @@ color:#2E2F42;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        gap: 40px;
+        margin-left: 76px;
 }
 .header-list :hover,
 .header-list :focus {
@@ -48,17 +76,27 @@ color: #404BBF;
 }
 .header-link {
     color: #2e2f42;
+    padding: 24px 0;
+    display: inline;
 }
 
 /* contacts */
 .contacts {
     font-style: normal;
+    padding: 24px 0;
+    gap: 40px;
+    margin-left: 332px;
+
+    .contacts-list{
+        gap: 40px;
+    }
 }
     .contacts-link {
     color: #434455;
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        padding: 24px 0;
     }
    .contacts-link:hover,
    .contacts-link:focus {
@@ -68,7 +106,9 @@ color: #404BBF;
    /* hero */
    .hero {
     background-color: #2E2F42;
+    padding: 188px 0;
    }
+
 
 .hero-name {
     color: #FFF;
@@ -77,6 +117,9 @@ color: #404BBF;
         font-weight: 700;
         line-height: 1.07;
         letter-spacing: 0.02em;
+        width: 496px;
+        margin-left: auto;
+       margin-right: auto;
 }
 
    .button-hero {
@@ -87,13 +130,32 @@ color: #404BBF;
         line-height: 1.5;
         letter-spacing: 0.04em;
         cursor: pointer;
+        display: block;
+        padding: 16px 32px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: auto;
+
    }
 
    .button-hero:hover,
    .button-hero:focus {
 background-color: #404BBF;
    }
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
    .order-name {
     color: #2E2F42;
         font-size: 20px;
@@ -101,6 +163,13 @@ background-color: #404BBF;
         line-height: 1.2;
         letter-spacing: 0.02em;
    }
+
+.description{
+    display: flex;
+    padding: 120px 0;
+    gap: 24px;
+    width: 264;
+}
 
 .description-order {
     color: #434455;
