@@ -20,6 +20,15 @@ ul{
     display: flex;
 }
 
+img {
+    display:block;
+    max-width: 100%;
+}
+
+.section {
+    padding: 120px;
+}
+    
 .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -37,9 +46,6 @@ ul{
     display: flex;
 }
 
-.header {
- 
-}
 
 .header-logo {
     color: #4d5ae5;
@@ -86,11 +92,11 @@ color: #404BBF;
     padding: 24px 0;
     gap: 40px;
     margin-left: 332px;
-
+}
     .contacts-list{
         gap: 40px;
     }
-}
+
     .contacts-link {
     color: #434455;
         font-weight: 400;
@@ -102,6 +108,9 @@ color: #404BBF;
    .contacts-link:focus {
     color: #404BBF;
    }
+
+   
+  
 
    /* hero */
    .hero {
@@ -162,13 +171,20 @@ background-color: #404BBF;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+       margin-bottom: 8px;
    }
 
 .description{
-    display: flex;
+display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
     padding: 120px 0;
-    gap: 24px;
-    width: 264;
+}
+
+.description-name {
+   width: 264px;
+
 }
 
 .description-order {
@@ -178,8 +194,16 @@ background-color: #404BBF;
         letter-spacing: 0.02em;
 }
 /* team */
-.portfolio-content-list {
+.team-container {
+margin-bottom: 72px;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 32px;
+}
 
+
+.team-content-list {
+    gap: 24px;
 }
 
 .team-list {
@@ -198,6 +222,10 @@ color: #2E2F42;
 
 .team-img {
     background-color: #FFF;
+    width: 264px;
+    height: 260px;
+margin-bottom: 24px;
+    
 }
 
 .team-name {
@@ -208,6 +236,7 @@ color: #2E2F42;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-order {
@@ -216,6 +245,21 @@ background-color: #FFFFFF;
     text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.portfolio-content-list {
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.portfolio-container{
+    margin-top: 32px;
+    padding-bottom: 32px;
+    /* border: 1px solid #E7E9FC; */
+}
+
+.portfolio-link {
+    width: calc((100% - 24px * 2) / 3 );
 }
 
 .footer {
