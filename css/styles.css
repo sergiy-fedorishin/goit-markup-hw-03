@@ -21,6 +21,10 @@ ul{
     display: flex;
 }
 
+ul li:last-child {
+    margin-right: 0;
+}
+
 img {
     display:block;
     max-width: 100%;
@@ -36,15 +40,19 @@ img {
     margin: 0 auto;
 }
 
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;  
-    
+    justify-content: space-between;
 }
 
 .navigation{
     display: flex;
+    align-items: center;
 }
 
 
@@ -57,6 +65,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
+    margin-right: 76px;
 }
 .accent-black {
 color:#2E2F42;
@@ -74,7 +83,7 @@ color:#2E2F42;
         line-height: 1.5;
         letter-spacing: 0.02em;
         gap: 40px;
-        margin-left: 76px;
+        
 }
 .header-list :hover,
 .header-list :focus {
@@ -127,10 +136,10 @@ color: #404BBF;
         font-weight: 700;
         line-height: 1.07;
         letter-spacing: 0.02em;
-        width: 496px;
+        max-width: 496px;
         margin-left: auto;
        margin-right: auto;
-}
+    }
 
    .button-hero {
     background-color: #4D5AE5;
@@ -147,7 +156,9 @@ color: #404BBF;
         border-radius: 4px;
         margin-left: auto;
         margin-right: auto;
-
+        min-width: 169px;
+        height: 56px;
+        border: none;
    }
 
    .button-hero:hover,
@@ -165,6 +176,10 @@ background-color: #404BBF;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.feuters-list{
+    padding: 120px 0;
 }
    .order-name {
     color: #2E2F42;
@@ -185,6 +200,7 @@ display: flex;
 
 .description-name {
    width: 264px;
+    margin-right: 24px;
 
 }
 
@@ -199,7 +215,8 @@ display: flex;
 margin-bottom: 72px;
 margin-left: auto;
 margin-right: auto;
-padding-bottom: 32px;
+padding: 32px 0;
+
 }
 
 
@@ -209,6 +226,7 @@ padding-bottom: 32px;
 
 .team-list {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .team-content {
@@ -248,6 +266,7 @@ background-color: #FFFFFF;
 
 .order-team {
 width: calc((100% - 24px * 3) / 4);
+border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-content-list {
