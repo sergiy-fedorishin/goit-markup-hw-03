@@ -31,7 +31,7 @@ img {
 }
 
 .section {
-    padding: 120px;
+    padding: 120px 0;
 }
     
 .container {
@@ -179,7 +179,6 @@ background-color: #404BBF;
 }
 
 .feuters-list{
-    padding: 120px 0;
 }
    .order-name {
     color: #2E2F42;
@@ -195,7 +194,6 @@ display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 8px;
-    padding: 120px 0;
 }
 
 .description-name {
@@ -226,7 +224,6 @@ padding: 32px 0;
 
 .team-list {
     background-color: #F4F4FD;
-    padding: 120px 0;
 }
 
 .team-content {
@@ -271,18 +268,20 @@ border-radius: 0px 0px 4px 4px;
 
 .portfolio-content-list {
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 48px;
     
 }
 
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .portfolio-container{
-    margin-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
-
-
 }
 
 .portfolio-order {
@@ -291,6 +290,7 @@ border-radius: 0px 0px 4px 4px;
 
 .footer {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -301,8 +301,8 @@ border-radius: 0px 0px 4px 4px;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        padding-top: 101.5px;
-        padding-bottom: 17.5px;
+        margin-bottom: 16px;
+        display: inline-block;
 }
 
 .accent-white {
@@ -315,6 +315,5 @@ border-radius: 0px 0px 4px 4px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         width: 264px;
-        padding-bottom: 100px;
 }
 
